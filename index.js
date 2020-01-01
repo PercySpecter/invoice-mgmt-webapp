@@ -16,6 +16,7 @@ app.set('views', './views');
 app.set('view engine', 'hbs');
 app.use('/images' , express.static('views/images'));
 app.use('/scripts' , express.static('views/scripts'));
+app.use('/stylesheets' , express.static('views/stylesheets'));
 
 const bodyParser = require('body-parser').json();
 /*Required Dependencies end*/

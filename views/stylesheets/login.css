@@ -1,0 +1,21 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #B71B1B 0%, #780B0B 99.99%, rgba(183, 27, 27, 0) 100%);
+}
+
+.logo {
+  margin-top: -6.5rem;
+}
+
+.form-in {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 3rem;
+  padding-left: 1.5rem;
+}
