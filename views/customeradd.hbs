@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/productadd.css">
+    <link rel="stylesheet" href="stylesheets/customeradd.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title>Add Product</title>
+    <title>Add Customer</title>
   </head>
   <body onload="clearForms()">
     <header>
@@ -42,30 +42,40 @@
      <div id="main-body" class="container-fluid my-3 pt-5">
        <div class="row content mt-3">
          <div class="col-lg-5 mx-auto text-center">
-           <h5 style="background-color: #DC2C2C; color: white;" class="my-auto py-3">Add Products</h5>
+           <h5 style="background-color: #DC2C2C; color: white;" class="my-auto py-3">Add Customers</h5>
          </div>
        </div>
        <div class="row content h-100">
          <div class="col-lg-5 mx-auto my-auto">
-           <form id="product-form" class="container-fluid pb-3 px-4 bg-white border">
+           <form id="customer-form" class="container-fluid pb-3 px-4 bg-white border">
              <div class="row content mt-4 mb-3 mx-3">
                <div class="col-lg-12 my-auto">
-                 Product Name
+                 Customer Name
                </div>
              </div>
              <div class="row content my-3 mx-3">
                <div class="col-lg-12">
-                 <input class="form-in" type="text" id="prodname" name="prodname" placeholder="Name of the Product" style="width: 100%" required>
+                 <input class="form-in" type="text" id="custname" name="custname" placeholder="Name of the Customer" style="width: 100%" required>
                </div>
              </div>
              <div class="row content my-3 mx-3">
                <div class="col-lg-12 my-auto">
-                 Price
+                 Address
                </div>
              </div>
              <div class="row content my-3 mx-3">
                <div class="col-lg-12">
-                 <input class="form-in" type="text" id="price" name="price" placeholder="Price" style="width: 100%" required>
+                 <textarea class="form-in form-multi" type="text" id="addr" name="addr" placeholder="Customer's Address" style="width: 100%" required></textarea>
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12 my-auto">
+                 Phone
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12">
+                 <input class="form-in" type="text" id="phone" name="phone" placeholder="Customer's Phone Number" style="width: 100%" required>
                </div>
              </div>
              <div class="row content my-3 mx-3">
@@ -75,7 +85,7 @@
              </div>
              <div class="row content my-4 mx-3">
                <div class="col-12 col-lg-5 mx-auto">
-                 <input type="image" src="images/submit-button.png" id="submit-product" name="submit-product">
+                 <input type="image" src="images/submit-button.png" id="submit-customer" name="submit-customer">
                </div>
              </div>
            </form>
@@ -83,5 +93,5 @@
        </div>
      </div>
   </body>
-  <script src="scripts/productadd.js"></script>
+  <script src="scripts/customeradd.js"></script>
 </html>

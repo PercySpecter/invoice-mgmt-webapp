@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #D20606;
+}
+
+.form-in {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 3rem;
+  padding-left: 1.5rem;
+}
+
+.form-multi {
+  height: 7rem;
+}

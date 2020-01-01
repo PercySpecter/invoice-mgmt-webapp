@@ -42,6 +42,10 @@ app.get('/invoiceadd' , (req , res) => {
   res.render('invoiceadd');
 });
 
+app.get('/customeradd' , (req , res) => {
+  res.render('customeradd');
+});
+
 app.get('/productadd' , (req , res) => {
   res.render('productadd');
 });
