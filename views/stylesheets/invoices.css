@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #D20606;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #D20606;
+}
+
+.title-row {
+  background-color: #DC2C2C;
+  color: white;
+  border-top: 1px solid #DC2C2C;
+}
+
+th, td {
+  border-left: 2px solid #00000025;
+  border-right: 2px solid #00000025;
+  padding-left: 2rem !important;
+}

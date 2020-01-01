@@ -26,8 +26,12 @@ app.get('/login' , (req , res) => {
   res.render('login');
 });
 
-app.get('/loggedin' , (req , res) => {
-  res.send('loggedin');
+app.get('/invoices' , (req , res) => {
+  res.render('invoices');
+});
+
+app.get('/invoiceadd' , (req , res) => {
+  res.render('invoiceadd');
 });
 
 

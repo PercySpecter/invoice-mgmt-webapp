@@ -26,7 +26,7 @@
           localStorage.setItem("token" , token.token);
           document.getElementById('msg').innerHTML = '<span class="text-success">Logged In<span>';
           document.querySelector('#pass').value = '';
-          location.replace('loggedin');
+          location.replace('invoices');
         }
         else
         {
