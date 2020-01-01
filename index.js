@@ -34,12 +34,16 @@ app.get('/customers' , (req , res) => {
   res.render('customers');
 });
 
+app.get('/products' , (req , res) => {
+  res.render('products');
+});
+
 app.get('/invoiceadd' , (req , res) => {
   res.render('invoiceadd');
 });
 
-app.get('/customeradd' , (req , res) => {
-  res.render('customeradd');
+app.get('/productadd' , (req , res) => {
+  res.render('productadd');
 });
 
 

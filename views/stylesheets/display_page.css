@@ -10,6 +10,10 @@ body {
   color: #D20606;
 }
 
+tbody {
+  border-bottom: 2px solid #00000025;
+}
+
 .title-row {
   background-color: #DC2C2C;
   color: white;
