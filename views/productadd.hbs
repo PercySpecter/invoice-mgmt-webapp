@@ -1,1 +1,87 @@
-productadd
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/productadd.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Products</title>
+  </head>
+  <body onload="clearForms()">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light border">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" height="46px" width="46px" alt="Itobuz"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span class="w-100"><!-- To align nav links to right --></span>
+          <div class="collapse navbar-collapse navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item pl-3">
+                <a class="nav-link" href="products">Products</a>
+              </li>
+              <li class="nav-item pl-3">
+                <a class="nav-link" href="customers">Customers</a>
+              </li>
+              <li class="nav-item pl-3">
+                <a class="nav-link" href="invoices">Invoices</a>
+              </li>
+            </ul>
+
+            <div id="logout-button" class="">
+
+            </div>
+          </div>
+        </nav>
+     </header>
+     <div id="main-body" class="container-fluid my-3 pt-5">
+       <div class="row content mt-3">
+         <div class="col-lg-5 mx-auto text-center">
+           <h5 style="background-color: #DC2C2C; color: white;" class="my-auto py-2">Add Products</h5>
+         </div>
+       </div>
+       <div class="row content h-100">
+         <div class="col-lg-5 mx-auto my-auto">
+           <form id="product-form" class="container-fluid pb-3 px-4 bg-white border">
+             <div class="row content mt-4 mb-3 mx-3">
+               <div class="col-lg-12 my-auto">
+                 Product Name
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12">
+                 <input class="form-in" type="text" id="prodname" name="prodname" placeholder="Name of the Product" style="width: 100%" required>
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12 my-auto">
+                 Price
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12">
+                 <input class="form-in" type="text" id="price" name="price" placeholder="Price" style="width: 100%" required>
+               </div>
+             </div>
+             <div class="row content my-3 mx-3">
+               <div class="col-lg-12 text-center" id="msg">
+
+               </div>
+             </div>
+             <div class="row content my-4 mx-3">
+               <div class="col-12 col-lg-5 mx-auto">
+                 <input type="image" src="images/submit-button.png" id="submit-product" name="submit-product">
+               </div>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+  </body>
+  <script src="scripts/productadd.js"></script>
+</html>
