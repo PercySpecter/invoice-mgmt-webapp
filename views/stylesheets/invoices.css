@@ -16,6 +16,14 @@ body {
   border-top: 1px solid #DC2C2C;
 }
 
+.light-row {
+  background-color: #EDECEC;
+}
+
+.dark-row {
+  background-color: #FFD4D4;
+}
+
 th, td {
   border-left: 2px solid #00000025;
   border-right: 2px solid #00000025;
