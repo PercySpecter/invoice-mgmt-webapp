@@ -3,7 +3,7 @@
   if(token == null)
   {
     document.getElementById('main-body').innerHTML = `<span>
-                                                        Please <a href="login" style"color: #D20606;">Login<a> to view Invoices
+                                                        Please <a href="login" style"color: #D20606;">Login<a> to view Customers
                                                       </span>`;
   }
   else
@@ -28,7 +28,7 @@
                         <td>${customer.name}</td>
                         <td>${customer.address}</td>
                         <td>${customer.phone}</td>
-                        <td class="col-sm-2 col-lg-1"><a href=""><div><img src="images/edit.png"></div></a></td>
+                        <td class="col-lg-1 pl-3 pl-lg-5"><a href=""><img src="images/edit.png"></a></td>
                       </tr>`
       } , '');
       document.getElementById('customer-list').innerHTML = customer_list;

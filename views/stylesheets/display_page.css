@@ -33,3 +33,7 @@ th, td {
   border-right: 2px solid #00000025;
   padding-left: 2rem !important;
 }
+
+.inv-link:hover {
+  cursor: pointer;
+}
