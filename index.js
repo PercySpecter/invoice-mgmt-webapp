@@ -50,6 +50,10 @@ app.get('/productadd' , (req , res) => {
   res.render('productadd');
 });
 
+app.get('/' , (req , res) => {
+  res.render('homepage');
+});
+
 
 var server = app.listen(3000, function () {
   console.log('Server running at http://localhost:' + server.address().port)

@@ -1,4 +1,8 @@
 (async () => {
+  if(localStorage.getItem('token') != null)
+  {
+    location.replace('invoices');
+  }
   document.getElementById('login-form').addEventListener('submit' , async (e) => {
     e.preventDefault();
     const credentials = {uname: document.forms['login-form']['uname'].value , pass: document.forms['login-form']['pass'].value};

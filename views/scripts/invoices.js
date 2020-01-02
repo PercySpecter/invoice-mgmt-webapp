@@ -63,12 +63,12 @@ let customers, invoices, products;
       // console.log(invoices);
       // console.log(customers);
       let invoice_list = invoices.reduce((agg , invoice , index) => {
-        return agg += `<tr class="inv-link ${(index % 2) ? "dark-row" : "light-row"}" onclick="printInvoice(${invoice.id})">
+        return agg += `<tr class="${(index % 2) ? "dark-row" : "light-row"}" onclick="printInvoice(${invoice.id})">
                         <td>${index+1}</td>
                         <td>${customers.find((customer) => customer.id == invoice.customer_id).name}</td>
                         <td>${invoice.discount}%</td>
                         <td>${invoice.total}</td>
-                        <!-- <td class="col-lg-1 pl-3 pl-lg-5"><i class="fa fa-print text-dark"></i></td> -->
+                        <td class="inv-link col-lg-1 pl-3 pl-lg-5"><i class="fa fa-print"></i></td>
                       </tr>`
       } , '');
       document.getElementById('invoice-list').innerHTML = invoice_list;
