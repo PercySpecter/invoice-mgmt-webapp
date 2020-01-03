@@ -97,6 +97,7 @@ function printInvoice(inv_id)
     invItemList.push([prod.name , item.quantity , (prod.price * item.quantity).toFixed(2)]);
     return s += prod.price * item.quantity;
   } , 0);
+  let discAmt = subtotal * inv.discount * 0.01;
   console.log(invItemList);
   let docDefinition = {
     content: [
@@ -110,7 +111,7 @@ function printInvoice(inv_id)
         }
       },
       `Gross Total: ${subtotal.toFixed(2)}`,
-      `Discount: ${inv.discount}%`,
+      `Discount (@${inv.discount}%): ${discAmt.toFixed(2)}`,
       `Net Total: ${inv.total.toFixed(2)}`
     ]
   };
